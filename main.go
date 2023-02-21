@@ -9,7 +9,7 @@ import (
 func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "This is dataplane changed")
+		fmt.Fprintf(w, "This is dataplane")
 	})
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
